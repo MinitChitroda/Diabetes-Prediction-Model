@@ -38,7 +38,8 @@ cd first-mlops-project
 
 ```
 python3 -m venv .mlops
-source .mlops/bin/activate
+source .mlops/bin/activate    # For macOs
+source .mlops/Scripts/activate   # For windows
 ```
 
 ### 3. Install Dependencies
@@ -91,9 +92,18 @@ docker run -p 8000:8000 diabetes-prediction-model
 kubectl apply -f diabetes-prediction-model-deployment.yaml
 ```
 
-🙌 Credits
+## port forwarding 
+![image](https://github.com/user-attachments/assets/a0b63d1e-e2f4-4a71-b707-798a2938aab2)
 
-Created by `ABHISHEK VEERAMALLA`
+## Output
+![image](https://github.com/user-attachments/assets/e80359fb-1243-4ca7-84c8-9b92c80a18c0)
 
-Subscribe for more DevOps + MLOps content on the YouTube Channel - `Abhishek.Veeramalla`
+After changing the parameters 
+![image](https://github.com/user-attachments/assets/5159037f-1ef6-4e67-a9ad-985c812b53e3)
+
+
+
+
+
+
 
