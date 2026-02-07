@@ -24,3 +24,23 @@ model.fit(X_train, y_train)
 # Save
 joblib.dump(model, "diabetes_model.pkl")
 print("✅ Model saved as diabetes_model.pkl")
+#python -m venv .mlops
+#.mlops\Scripts\activate
+#uvicorn main:app --reload
+#pip install -r requirements.txt
+#python train.py
+#docker build -t diabetes-prediction-model .
+#code Dockerfile
+#ls
+# docker run -p 8000:8000 diabetes-prediction-model
+# docker images
+#kubectl version --client
+#kubectl cluster-info
+#code k8s-deploy.yml
+# kubectl apply -f k8s-deploy.yml
+# kubectl get deployments
+# kubectl get pods
+#  kubectl get services
+#docker tag diabetes-prediction-model:latest  aryammanshah/diabetes-model-demo:v1
+# docker push aryammanshah/diabetes-model-demo:v1
+# kubectl port-forward svc/diabetes-api-service 8000:80
